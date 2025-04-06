@@ -21,16 +21,10 @@ const Index = () => {
     if (metaDescription) {
       metaDescription.setAttribute("content", "Felom Company Limited - Trusted provider of high-quality products and services in Uganda and beyond. From furniture to solar panels, construction to electrical installations.");
     }
-
-    // Add class to specific elements for animation
-    const elementsToAnimate = document.querySelectorAll("section > div > div");
-    elementsToAnimate.forEach((element) => {
-      element.classList.add("animate-on-scroll");
-    });
   }, []);
 
   return (
-    <div className="min-h-screen overflow-x-hidden">
+    <div className="min-h-screen">
       <Navbar />
       <main>
         <Hero />

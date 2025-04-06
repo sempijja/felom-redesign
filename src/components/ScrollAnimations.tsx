@@ -8,6 +8,7 @@ const ScrollAnimations = () => {
     observerRef.current = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
+          // Mark elements as visible immediately on first load
           if (entry.isIntersecting) {
             entry.target.classList.add("animated");
             observerRef.current?.unobserve(entry.target);
@@ -18,7 +19,11 @@ const ScrollAnimations = () => {
     );
 
     const animatedElements = document.querySelectorAll(".animate-on-scroll");
+    
+    // Make elements visible initially
     animatedElements.forEach((element) => {
+      // Add animated class to all elements initially to ensure visibility
+      element.classList.add("animated");
       observerRef.current?.observe(element);
     });
 
