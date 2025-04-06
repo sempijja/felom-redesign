@@ -92,10 +92,20 @@
   .container {
     @apply px-6 md:px-8;
   }
+
+  /* Glass morphism elements */
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-sm border border-white/20 shadow-lg;
+  }
   
   /* Modern card styles */
   .saas-card {
     @apply rounded-lg shadow-md transition-all duration-300 hover:shadow-lg overflow-hidden;
+  }
+  
+  /* Airbnb-inspired card */
+  .airbnb-card {
+    @apply rounded-xl overflow-hidden bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1;
   }
   
   /* Modern button styles */
@@ -114,9 +124,71 @@
     opacity: 1 !important;
     transform: translateY(0) !important;
   }
+  
+  /* Stats counter animations */
+  .stat-number {
+    position: relative;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .stat-number.counted {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Background patterns */
+  .bg-grid-pattern {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  .bg-dots-pattern {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  /* Expanding line animation */
+  @keyframes expandLine {
+    to { transform: scaleX(1); }
+  }
+  
+  .animate-expand {
+    animation: expandLine 1.2s ease forwards 0.5s;
+  }
 }
 
 /* Modern text styles */
 .text-gradient {
   @apply bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent;
+}
+
+/* 3D button effect */
+.btn-3d {
+  @apply transform transition-transform duration-200 ease-in-out active:scale-95 hover:-translate-y-1;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary) / 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.5);
 }
