@@ -34,33 +34,33 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex justify-between items-center">
         <a href="#" className="flex items-center">
-          <span className="text-2xl font-bold text-felom-gray-800">
-            Felom<span className="text-felom-blue">.</span>
+          <span className="text-2xl font-bold text-gray-800">
+            Felom<span className="text-primary">.</span>
           </span>
         </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#about" className="text-felom-gray-700 hover:text-felom-blue-600 font-medium">
+          <a href="#about" className="text-gray-700 hover:text-primary font-medium">
             About
           </a>
-          <a href="#services" className="text-felom-gray-700 hover:text-felom-blue-600 font-medium">
+          <a href="#services" className="text-gray-700 hover:text-primary font-medium">
             Services
           </a>
-          <a href="#products" className="text-felom-gray-700 hover:text-felom-blue-600 font-medium">
+          <a href="#products" className="text-gray-700 hover:text-primary font-medium">
             Products
           </a>
-          <a href="#testimonials" className="text-felom-gray-700 hover:text-felom-blue-600 font-medium">
+          <a href="#testimonials" className="text-gray-700 hover:text-primary font-medium">
             Testimonials
           </a>
-          <a href="#contact" className="text-felom-gray-700 hover:text-felom-blue-600 font-medium">
+          <a href="#contact" className="text-gray-700 hover:text-primary font-medium">
             Contact
           </a>
         </nav>
 
         <Button 
           variant="default" 
-          className="hidden md:inline-flex bg-felom-blue hover:bg-felom-blue-600"
+          className="hidden md:inline-flex"
           asChild
         >
           <a href="#contact">Get in Touch</a>
@@ -69,7 +69,7 @@ const Navbar = () => {
         {/* Mobile menu button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden text-felom-gray-800 focus:outline-none"
+          className="md:hidden text-gray-800 focus:outline-none"
           aria-label="Toggle menu"
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -84,24 +84,24 @@ const Navbar = () => {
         )}
       >
         <div className="container mx-auto py-4 flex flex-col space-y-4">
-          <a href="#about" className="text-felom-gray-700 hover:text-felom-blue-600 font-medium py-2">
+          <a href="#about" className="text-gray-700 hover:text-primary font-medium py-2">
             About
           </a>
-          <a href="#services" className="text-felom-gray-700 hover:text-felom-blue-600 font-medium py-2">
+          <a href="#services" className="text-gray-700 hover:text-primary font-medium py-2">
             Services
           </a>
-          <a href="#products" className="text-felom-gray-700 hover:text-felom-blue-600 font-medium py-2">
+          <a href="#products" className="text-gray-700 hover:text-primary font-medium py-2">
             Products
           </a>
-          <a href="#testimonials" className="text-felom-gray-700 hover:text-felom-blue-600 font-medium py-2">
+          <a href="#testimonials" className="text-gray-700 hover:text-primary font-medium py-2">
             Testimonials
           </a>
-          <a href="#contact" className="text-felom-gray-700 hover:text-felom-blue-600 font-medium py-2">
+          <a href="#contact" className="text-gray-700 hover:text-primary font-medium py-2">
             Contact
           </a>
           <Button 
             variant="default" 
-            className="w-full bg-felom-blue hover:bg-felom-blue-600"
+            className="w-full"
             asChild
           >
             <a href="#contact">Get in Touch</a>

@@ -1,5 +1,5 @@
 
-import { Heart, Shield, Zap, Building, Target, Award } from "lucide-react";
+import { Shield, Zap, Building, Target, Award, Heart } from "lucide-react";
 
 const About = () => {
   const values = [
@@ -50,8 +50,8 @@ const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {values.map((value, index) => (
-            <div key={index} className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all">
-              <div className="bg-primary/10 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+            <div key={index} className="bg-white rounded-lg p-8 shadow-sm hover:shadow-md transition-all">
+              <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
                 {value.icon}
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">{value.title}</h3>
