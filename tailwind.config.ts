@@ -20,7 +20,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
+				sans: ['Inter', 'Cereal', 'system-ui', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -66,46 +66,23 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				felom: {
-					blue: {
-						DEFAULT: '#3B82F6',
-						50: '#EBF2FE',
-						100: '#D7E6FD',
-						200: '#B0CDFB',
-						300: '#88B4F9',
-						400: '#619BF8',
-						500: '#3B82F6',
-						600: '#0B61EE',
-						700: '#084BBC',
-						800: '#06368A',
-						900: '#042158',
-					},
-					green: {
-						DEFAULT: '#10B981',
-						50: '#E8FCF5',
-						100: '#D1F9EB',
-						200: '#A3F3D6',
-						300: '#75EDC2',
-						400: '#47E7AD',
-						500: '#19E099',
-						600: '#10B981',
-						700: '#0C8C61',
-						800: '#085F41',
-						900: '#043220',
-					},
-					gray: {
-						DEFAULT: '#64748B',
-						50: '#F8FAFC',
-						100: '#F1F5F9',
-						200: '#E2E8F0',
-						300: '#CBD5E1',
-						400: '#94A3B8',
-						500: '#64748B',
-						600: '#475569',
-						700: '#334155',
-						800: '#1E293B',
-						900: '#0F172A',
-					}
+				airbnb: {
+					primary: "#FF5A5F",
+					secondary: "#00A699",
+					dark: "#484848",
+					light: "#767676",
+				},
+				gray: {
+					50: "#F7F7F7",
+					100: "#EBEBEB",
+					200: "#D6D6D6",
+					300: "#C2C2C2",
+					400: "#ADADAD",
+					500: "#999999",
+					600: "#767676",
+					700: "#484848",
+					800: "#2D2D2D",
+					900: "#222222",
 				}
 			},
 			borderRadius: {
